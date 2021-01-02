@@ -106,6 +106,8 @@ import MainLandingPage from "MainLandingPage.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import EventLandingPage from "demos/EventLandingPage";
+import AboutUsPage from "pages/AboutUs";
+import AgencyLandingPage from "demos/AgencyLandingPage";
 
 export default function App() {
   // return <AnimationRevealPage disabled></AnimationRevealPage>;

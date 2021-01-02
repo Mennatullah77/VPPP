@@ -7,6 +7,8 @@ import LogoImage from "../../images/logo.svg";
 import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
+import { ReactComponent as InstagramIcon } from "../../images/instagram-icon.svg";
+import { ReactComponent as LinkedINIcon } from "../../images/linkedin-icon.svg";
 
 const Container = tw.div`relative bg-gray-200 -mx-8 -mb-8 px-8`;
 const FiveColumns = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20 flex flex-wrap justify-between`;
@@ -41,20 +43,26 @@ export default () => {
         <WideColumn>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
+            <LogoText>VPPP </LogoText>
           </LogoContainer>
           <CompanyDescription>
-            Treact is an Internet Technology company providing design resources such as website templates and themes.
+            VPPP is a full-fledged production company that provides the standard range of high-quailty media services from Pre to Post production..
           </CompanyDescription>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink href="https://www.facebook.com/VPPPians/">
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
+            <SocialLink href="https://twitter.com/VPPPC">
               <TwitterIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
+            <SocialLink href="https://www.youtube.com/channel/UCnRNqOAniT_YSk4JqY8sgzQ">
               <YoutubeIcon />
+            </SocialLink>
+            <SocialLink href="https://www.youtube.com/channel/UCnRNqOAniT_YSk4JqY8sgzQ">
+              <InstagramIcon />
+            </SocialLink>
+            <SocialLink href="https://www.youtube.com/channel/UCnRNqOAniT_YSk4JqY8sgzQ">
+              <LinkedINIcon />
             </SocialLink>
           </SocialLinksContainer>
         </WideColumn>
@@ -62,10 +70,10 @@ export default () => {
           <ColumnHeading>Quick Links</ColumnHeading>
           <LinkList>
             <LinkListItem>
-              <Link href="#">Blog</Link>
+              <Link href="/components/blocks/Blog/GridWithFeaturedPost">Blog</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">FAQs</Link>
+              <Link href="/components/blocks/Blog/PopularAndRecentPosts">FAQs</Link>
             </LinkListItem>
             <LinkListItem>
               <Link href="#">Support</Link>
@@ -99,10 +107,10 @@ export default () => {
               <Link href="#">GDPR</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Privacy Policy</Link>
+              <Link href="/components/innerPages/PrivacyPolicyPage">Privacy Policy</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Terms of Service</Link>
+              <Link href="/components/innerPages/TermsOfServicePage">Terms of Service</Link>
             </LinkListItem>
             <LinkListItem>
               <Link href="#">Disclaimer</Link>

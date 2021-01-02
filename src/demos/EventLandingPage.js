@@ -10,10 +10,10 @@ import Footer from "components/footers/SimpleFiveColumn.js";
 export default () => (
   <AnimationRevealPage>
     <Hero />
-    <Features />
+    {/* <Features />
     <Blog />
     <Testimonial />
-    <ContactUsForm />
+    <ContactUsForm /> */}
     <Footer />
   </AnimationRevealPage>
 );

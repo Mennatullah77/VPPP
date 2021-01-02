@@ -3,6 +3,7 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
+
 import Header, { NavLink, NavLinks, PrimaryLink as PrimaryLinkBase, LogoLink, NavToggle, DesktopNavLinks } from "../headers/light.js";
 
 const StyledHeader = styled(Header)`
@@ -18,7 +19,7 @@ const StyledHeader = styled(Header)`
 const PrimaryLink = tw(PrimaryLinkBase)`rounded-full`
 const Container = styled.div`
   ${tw`relative -mx-8 -mt-8 bg-center bg-cover h-screen min-h-144`}
-  background-image: url("https://images.unsplash.com/photo-1536300007881-7e482242baa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=80");
+  background-image: url("https://images.unsplash.com/photo-1588990492514-75dc82e48152?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80");
 `;
 
 const OpacityOverlay = tw.div`z-10 absolute inset-0 bg-black opacity-75`;
@@ -38,22 +39,31 @@ const PrimaryAction = tw.button`rounded-full px-8 py-3 mt-10 text-sm sm:text-bas
 export default () => {
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="#">
-        About
+      <NavLink href="/components/landingPages/EventLandingPage">
+        HOME
       </NavLink>
-      <NavLink href="#">
-        Blog
+      <NavLink href="/components/innerPages/AboutUsPage">
+        ABOUT US
       </NavLink>
-      <NavLink href="#">
+      <NavLink href="/components/innerPages/BlogIndexPage">
+        OUR WORK
+      </NavLink>
+      <NavLink href="/components/innerPages/ServicesPage">
+        Services
+      </NavLink>
+      <NavLink href="/components/innerPages/ContactUsPage">
+        Contact
+      </NavLink>
+      {/* <NavLink href="#">
         Locations
       </NavLink>
-      <NavLink href="#">
+      <NavLink href="/components/innerPages/PricingPage">
         Pricing
-      </NavLink>
+      </NavLink> */}
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink href="/#">
-        Hire Us
+      <PrimaryLink href="https://www.facebook.com/messages/t/109682967555385">
+        Order Now
       </PrimaryLink>
     </NavLinks>
   ];
@@ -65,11 +75,11 @@ export default () => {
         <StyledHeader links={navLinks} />
         <Content>
           <Heading>
-              Book Music & Comedy Events
+              Make Your Own Video
               <br />
-              anywhere in New York
+              You Dream,We Create
           </Heading>
-          <PrimaryAction>Search Events Near Me</PrimaryAction>
+          <PrimaryAction href="/components/innerPages/BlogIndexPage">See Portofolio</PrimaryAction>
         </Content>
       </HeroContainer>
     </Container>

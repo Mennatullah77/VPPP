@@ -6,7 +6,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
-import logo from "../../images/logo.svg";
+import logo from "../../images/logo.png";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
@@ -34,10 +34,10 @@ export const PrimaryLink = tw(NavLink)`
 `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
+  ${tw`flex items-center font-black border-b-0 text-xl! ml-0!`};
 
   img {
-    ${tw`w-10 mr-3`}
+    ${tw`w-20 mr-3`}
   }
 `;
 
@@ -72,14 +72,16 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">About</NavLink>
-      <NavLink href="/#">Blog</NavLink>
-      <NavLink href="/#">Pricing</NavLink>
-      <NavLink href="/#">Contact Us</NavLink>
-      <NavLink href="/#" tw="lg:ml-12!">
+      <NavLink href="/components/landingPages/EventLandingPage">Home</NavLink>
+      <NavLink href="/components/innerPages/AboutUsPage">About Us</NavLink>
+      <NavLink href="/components/innerPages/BlogIndexPage">Our Work</NavLink>
+      <NavLink href="/components/innerPages/ServicesPage">Services</NavLink>
+      {/* <NavLink href="/components/innerPages/PricingPage">Pricing</NavLink> */}
+      <NavLink href="/components/innerPages/ContactUsPage">Contact</NavLink>
+      <NavLink href="/components/innerPages/LoginPage" tw="lg:ml-12!">
         Login
       </NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Sign Up</PrimaryLink>
+      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/components/innerPages/SignupPage">Sign Up</PrimaryLink>
     </NavLinks>
   ];
 
@@ -89,7 +91,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLogoLink = (
     <LogoLink href="/">
       <img src={logo} alt="logo" />
-      Treact
+      Video production
     </LogoLink>
   );
 

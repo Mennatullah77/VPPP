@@ -26,6 +26,7 @@ import AboutUsPage from "pages/AboutUs.js";
 import ContactUsPage from "pages/ContactUs.js";
 import BlogIndexPage from "pages/BlogIndex.js";
 import TermsOfServicePage from "pages/TermsOfService.js";
+import ServicesPage from "pages/Services.js";
 import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
 import LoginPageImageSrc from "images/demo/LoginPage.jpeg";
@@ -176,6 +177,11 @@ export const components = {
       component: TermsOfServicePage,
       url: `/components/innerPages/TermsOfServicePage`,
       imageSrc: TermsOfServicePageImageSrc,
+    },
+    ServicesPage: {
+      component: ServicesPage,
+      url: `/components/innerPages/ServicesPage`,
+      
     },
     PrivacyPolicyPage: {
       component: PrivacyPolicyPage,
